@@ -1,14 +1,22 @@
 
+import { Navigation } from "@/components/Navigation";
 import { DentalHero } from "@/components/DentalHero";
+import { AboutUs } from "@/components/AboutUs";
 import { AppointmentForm } from "@/components/AppointmentForm";
 import { ContactInfo } from "@/components/ContactInfo";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50 overflow-x-hidden">
-      <DentalHero />
+      <Navigation />
+      <div id="home">
+        <DentalHero />
+      </div>
+      <AboutUs />
       <AppointmentForm />
-      <ContactInfo />
+      <div id="contact">
+        <ContactInfo />
+      </div>
       
       {/* Footer */}
       <footer className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 text-white py-8">
