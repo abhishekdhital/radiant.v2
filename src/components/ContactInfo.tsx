@@ -55,8 +55,8 @@ export const ContactInfo = () => {
               </div>
               <h3 className="font-bold text-gray-900 mb-3 text-lg">Phone</h3>
               <p className="text-gray-600">
-                <a href="tel:+1234567890" className="hover:text-blue-600 transition-colors font-medium text-lg">
-                  (123) 456-7890
+                <a href="tel:+9779840030867" className="hover:text-blue-600 transition-colors font-medium text-lg">
+                  9840030867
                 </a>
               </p>
             </CardContent>
@@ -83,8 +83,8 @@ export const ContactInfo = () => {
               </div>
               <h3 className="font-bold text-gray-900 mb-3 text-lg">Address</h3>
               <p className="text-gray-600 font-medium">
-                123 Dental Street<br />
-                Health City, HC 12345
+                Bhutkhel, Tokha<br />
+                Kathmandu, Nepal
               </p>
             </CardContent>
           </Card>
@@ -112,10 +112,10 @@ export const ContactInfo = () => {
                 Dental emergencies don't wait for business hours. We're here when you need us most.
               </p>
               <a 
-                href="tel:+1234567899" 
+                href="tel:+9779840030867" 
                 className="inline-block bg-white text-purple-700 font-bold py-4 px-8 rounded-full text-xl hover:bg-gray-100 transition-colors duration-300 shadow-lg transform hover:scale-105"
               >
-                Emergency: (123) 456-7899
+                Emergency: 9840030867
               </a>
             </div>
           </div>

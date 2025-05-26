@@ -44,13 +44,25 @@ export const DentalHero = () => {
             </div>
           </div>
           
-          <div className="inline-block bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full p-1 hover:scale-105 transition-transform duration-300">
-            <a 
-              href="#appointment" 
-              className="block bg-white text-blue-700 font-bold py-4 px-8 rounded-full hover:bg-blue-50 transition-colors duration-300"
-            >
-              Book Your Appointment Now
-            </a>
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <div className="inline-block bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full p-1 hover:scale-105 transition-transform duration-300">
+              <a 
+                href="#appointment" 
+                className="block bg-white text-blue-700 font-bold py-4 px-8 rounded-full hover:bg-blue-50 transition-colors duration-300"
+              >
+                Book Your Appointment Now
+              </a>
+            </div>
+            
+            <div className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 rounded-full p-1 hover:scale-105 transition-transform duration-300">
+              <a 
+                href="tel:+9779840030867" 
+                className="flex items-center gap-2 bg-white text-blue-700 font-bold py-4 px-8 rounded-full hover:bg-blue-50 transition-colors duration-300"
+              >
+                <Phone className="w-5 h-5" />
+                Call Now: 9840030867
+              </a>
+            </div>
           </div>
         </div>
       </div>
