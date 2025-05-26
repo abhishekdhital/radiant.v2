@@ -1,5 +1,5 @@
 
-import { Menu, X, Stethoscope } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 export const Navigation = () => {
@@ -14,17 +14,21 @@ export const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo and Clinic Name */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-full flex items-center justify-center">
-              <Stethoscope className="w-6 h-6 text-white" />
+            <div className="w-12 h-12 rounded-full overflow-hidden bg-white border border-gray-200">
+              <img 
+                src="/lovable-uploads/1139b64d-1945-4afe-aa77-a8b7de0d333c.png" 
+                alt="Radiant Buddha Dental Clinic Logo"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-700 bg-clip-text text-transparent">
-                Dental Care Excellence
+              <span className="text-lg font-bold text-blue-700">
+                Radiant Buddha Dental Clinic
               </span>
               <span className="text-xs text-gray-500 -mt-1">Your Smile, Our Priority</span>
             </div>
@@ -51,8 +55,8 @@ export const Navigation = () => {
               Contact
             </button>
             <a
-              href="tel:+9779840030867"
-              className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 font-medium"
+              href="tel:+9779856027107"
+              className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300 font-medium"
             >
               Call Now
             </a>
@@ -92,8 +96,8 @@ export const Navigation = () => {
                 Contact
               </button>
               <a
-                href="tel:+9779840030867"
-                className="block bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-6 py-2 rounded-full text-center hover:shadow-lg transition-all duration-300 font-medium"
+                href="tel:+9779856027107"
+                className="block bg-blue-600 text-white px-6 py-2 rounded-full text-center hover:bg-blue-700 transition-colors duration-300 font-medium"
               >
                 Call Now
               </a>

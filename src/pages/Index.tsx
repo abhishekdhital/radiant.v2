@@ -7,7 +7,7 @@ import { ContactInfo } from "@/components/ContactInfo";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50 overflow-x-hidden">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       <Navigation />
       <div id="home">
         <DentalHero />
@@ -19,10 +19,10 @@ const Index = () => {
       </div>
       
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 text-white py-8">
+      <footer className="bg-gray-900 text-white py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gray-300">
-            © 2024 Dental Care Excellence. All rights reserved. | Designed with ❤️ for your smile
+            © 2024 Radiant Buddha Dental Clinic. All rights reserved.
           </p>
         </div>
       </footer>
