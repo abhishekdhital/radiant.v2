@@ -1,4 +1,3 @@
-
 import { Phone, Mail, MapPin, Clock, Navigation } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -74,7 +73,7 @@ export const ContactInfo = () => {
         </div>
 
         {/* Google Maps Section */}
-        <div className="mb-16">
+        <div id="find-us" className="mb-16">
           <div className="text-center mb-8">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Find Us on Map</h3>
             <p className="text-gray-600">Click on the map to get directions</p>

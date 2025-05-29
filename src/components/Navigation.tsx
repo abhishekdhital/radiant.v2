@@ -51,6 +51,13 @@ export const Navigation = () => {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
+              onClick={() => scrollToSection('find-us')}
+              className="text-gray-700 hover:text-blue-600 transition-all duration-300 font-semibold relative group"
+            >
+              Find Us
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+            </button>
+            <button
               onClick={() => scrollToSection('contact')}
               className="text-gray-700 hover:text-blue-600 transition-all duration-300 font-semibold relative group"
             >
@@ -91,6 +98,12 @@ export const Navigation = () => {
                 className="block w-full text-left text-gray-700 hover:text-blue-600 transition-colors duration-300 font-semibold py-3 px-2 rounded-lg hover:bg-blue-50"
               >
                 About Us
+              </button>
+              <button
+                onClick={() => scrollToSection('find-us')}
+                className="block w-full text-left text-gray-700 hover:text-blue-600 transition-colors duration-300 font-semibold py-3 px-2 rounded-lg hover:bg-blue-50"
+              >
+                Find Us
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
