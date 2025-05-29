@@ -1,5 +1,5 @@
 
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Navigation } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const ContactInfo = () => {
@@ -71,6 +71,60 @@ export const ContactInfo = () => {
               </p>
             </CardContent>
           </Card>
+        </div>
+
+        {/* Google Maps Section */}
+        <div className="mb-16">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Find Us on Map</h3>
+            <p className="text-gray-600">Click on the map to get directions</p>
+          </div>
+          
+          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
+            <div className="relative">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.0486799127444!2d85.27833451506217!3d27.71552963279334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198e4c5d3f5d%3A0x8f1f8f8f8f8f8f8f!2sBhagwan%20Pau%20Chowk%2C%20Swayambhu%2C%20Kathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2snp!4v1699999999999!5m2!1sen!2snp"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full"
+              ></iframe>
+              
+              {/* Overlay for click to open in maps */}
+              <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center group cursor-pointer">
+                <a 
+                  href="https://maps.app.goo.gl/J3tgUCpW6H9QNirG9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white/90 backdrop-blur-sm text-blue-600 font-semibold py-3 px-6 rounded-full border-2 border-blue-200 hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform opacity-0 group-hover:opacity-100 flex items-center gap-2"
+                >
+                  <Navigation className="w-5 h-5" />
+                  Get Directions
+                </a>
+              </div>
+            </div>
+            
+            <div className="p-6 bg-gradient-to-r from-blue-50 to-indigo-50">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div className="text-center md:text-left">
+                  <h4 className="font-semibold text-gray-900 mb-2">Radiant Buddha Dental Clinic</h4>
+                  <p className="text-gray-600 text-sm">Bhagwan Pau Chowk, Swayambhu, Kathmandu</p>
+                </div>
+                <a 
+                  href="https://maps.app.goo.gl/J3tgUCpW6H9QNirG9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold py-3 px-6 rounded-full hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform flex items-center gap-2"
+                >
+                  <MapPin className="w-5 h-5" />
+                  Open in Maps
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="text-center">
