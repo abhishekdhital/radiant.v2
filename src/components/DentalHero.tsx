@@ -1,9 +1,10 @@
 
+
 import { Calendar, Clock, Phone } from "lucide-react";
 
 export const DentalHero = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50 text-gray-900 pt-16">
+    <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-[#FAF9E4] to-indigo-50 text-gray-900 pt-16">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-32 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
@@ -56,3 +57,4 @@ export const DentalHero = () => {
     </section>
   );
 };
+

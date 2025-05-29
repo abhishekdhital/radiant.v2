@@ -1,10 +1,9 @@
-
 import { Award, Users, Heart, CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const AboutUs = () => {
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50">
+    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#FAF9E4] to-gray-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-800 to-gray-600 mb-6">
@@ -18,7 +17,7 @@ export const AboutUs = () => {
         </div>
 
         {/* Services */}
-        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 mb-16 shadow-xl border border-white/20 backdrop-blur-sm">
+        <div className="bg-gradient-to-br from-blue-50 via-[#FAF9E4] to-indigo-50 rounded-3xl p-8 mb-16 shadow-xl border border-white/20 backdrop-blur-sm">
           <div className="text-center mb-12">
             <h3 className="text-2xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h3>
             <p className="text-gray-600 text-lg">

@@ -1,4 +1,3 @@
-
 import { Navigation } from "@/components/Navigation";
 import { DentalHero } from "@/components/DentalHero";
 import { AboutUs } from "@/components/AboutUs";
@@ -7,7 +6,7 @@ import { ContactInfo } from "@/components/ContactInfo";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-[#FAF9E4] to-white overflow-x-hidden">
       <Navigation />
       <div id="home">
         <DentalHero />
@@ -19,7 +18,7 @@ const Index = () => {
       </div>
       
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-12">
+      <footer className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-2">Radiant Buddha Dental Clinic</h3>

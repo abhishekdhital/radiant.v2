@@ -1,10 +1,11 @@
 
+
 import { Phone, Mail, MapPin, Clock, Navigation } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const ContactInfo = () => {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 via-[#FAF9E4] to-blue-50">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-800 to-gray-600 mb-6">
@@ -149,3 +150,4 @@ export const ContactInfo = () => {
     </section>
   );
 };
+
