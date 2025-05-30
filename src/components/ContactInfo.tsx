@@ -1,5 +1,4 @@
 
-
 import { Phone, Mail, MapPin, Clock, Navigation } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -15,11 +14,11 @@ export const ContactInfo = () => {
       
       <div className="max-w-4xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-blue-700 to-indigo-800 mb-6">
+          <h2 className="text-3xl md:text-5xl font-light text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-blue-700 to-indigo-800 mb-6">
             Contact Information
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 mx-auto mb-6 rounded-full shadow-lg"></div>
-          <p className="text-lg text-gray-600 font-medium">
+          <p className="text-lg text-gray-600 font-light">
             Get in touch with us for quality dental care
           </p>
         </div>
@@ -31,8 +30,8 @@ export const ContactInfo = () => {
               <div className="w-14 h-14 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Phone className="w-7 h-7 text-blue-600" />
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2 text-lg">Phone</h3>
-              <p className="text-gray-600 font-medium">
+              <h3 className="font-light text-gray-900 mb-2 text-lg">Phone</h3>
+              <p className="text-gray-600 font-light">
                 <a href="tel:+9779846643260" className="hover:text-blue-600 transition-colors duration-300">
                   9846643260
                 </a>
@@ -46,10 +45,10 @@ export const ContactInfo = () => {
               <div className="w-14 h-14 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Mail className="w-7 h-7 text-purple-600" />
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2 text-lg">Email</h3>
-              <p className="text-gray-600 font-medium">
-                <a href="mailto:info@radiantbuddha.com" className="hover:text-purple-600 transition-colors duration-300">
-                  info@radiantbuddha.com
+              <h3 className="font-light text-gray-900 mb-2 text-lg">Email</h3>
+              <p className="text-gray-600 font-light">
+                <a href="mailto:prabeshranabhat46@gmail.com" className="hover:text-purple-600 transition-colors duration-300">
+                  prabeshranabhat46@gmail.com
                 </a>
               </p>
             </CardContent>
@@ -61,8 +60,8 @@ export const ContactInfo = () => {
               <div className="w-14 h-14 bg-gradient-to-br from-green-100 to-green-200 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <MapPin className="w-7 h-7 text-green-600" />
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2 text-lg">Address</h3>
-              <p className="text-gray-600 text-sm font-medium">
+              <h3 className="font-light text-gray-900 mb-2 text-lg">Address</h3>
+              <p className="text-gray-600 text-sm font-light">
                 Bhagwan Pau Chowk<br />
                 Swayambhu, Kathmandu
               </p>
@@ -75,8 +74,8 @@ export const ContactInfo = () => {
               <div className="w-14 h-14 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Clock className="w-7 h-7 text-orange-600" />
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2 text-lg">Hours</h3>
-              <p className="text-gray-600 text-sm font-medium">
+              <h3 className="font-light text-gray-900 mb-2 text-lg">Hours</h3>
+              <p className="text-gray-600 text-sm font-light">
                 Mon-Sat: 7AM-7PM<br />
                 Sun: Closed
               </p>
@@ -87,8 +86,8 @@ export const ContactInfo = () => {
         {/* Google Maps Section */}
         <div id="find-us" className="mb-16">
           <div className="text-center mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-800 to-blue-700 mb-4">Find Us on Map</h3>
-            <p className="text-gray-600 font-medium">Click on the map to get directions</p>
+            <h3 className="text-2xl md:text-3xl font-light text-transparent bg-clip-text bg-gradient-to-r from-gray-800 to-blue-700 mb-4">Find Us on Map</h3>
+            <p className="text-gray-600 font-light">Click on the map to get directions</p>
           </div>
           
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100 relative">
@@ -108,10 +107,10 @@ export const ContactInfo = () => {
               {/* Overlay for click to open in maps */}
               <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center group cursor-pointer rounded-t-3xl">
                 <a 
-                  href="https://maps.app.goo.gl/J3tgUCpW6H9QNirG9"
+                  href="https://maps.app.goo.gl/Pa8E7CCKH5y3p4rcA?g_st=afm"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-white/95 backdrop-blur-sm text-blue-600 font-semibold py-3 px-6 rounded-full border-2 border-blue-200 hover:bg-blue-50 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 transform opacity-0 group-hover:opacity-100 flex items-center gap-2"
+                  className="bg-white/95 backdrop-blur-sm text-blue-600 font-light py-3 px-6 rounded-full border-2 border-blue-200 hover:bg-blue-50 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 transform opacity-0 group-hover:opacity-100 flex items-center gap-2"
                 >
                   <Navigation className="w-5 h-5" />
                   Get Directions
@@ -122,14 +121,14 @@ export const ContactInfo = () => {
             <div className="p-6 bg-gradient-to-r from-blue-50 via-[#FAF9E4] to-indigo-50">
               <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                 <div className="text-center md:text-left">
-                  <h4 className="font-semibold text-gray-900 mb-2">Radiant Buddha Dental Clinic</h4>
+                  <h4 className="font-light text-gray-900 mb-2">Radiant Buddha Dental Clinic</h4>
                   <p className="text-gray-600 text-sm">Bhagwan Pau Chowk, Swayambhu, Kathmandu</p>
                 </div>
                 <a 
-                  href="https://maps.app.goo.gl/J3tgUCpW6H9QNirG9"
+                  href="https://maps.app.goo.gl/Pa8E7CCKH5y3p4rcA?g_st=afm"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold py-3 px-6 rounded-full hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform flex items-center gap-2"
+                  className="bg-gradient-to-r from-blue-600 to-blue-700 text-white font-light py-3 px-6 rounded-full hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform flex items-center gap-2"
                 >
                   <MapPin className="w-5 h-5" />
                   Open in Maps
@@ -146,14 +145,14 @@ export const ContactInfo = () => {
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Phone className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Emergency Dental Care</h3>
-              <p className="text-blue-100 mb-8 text-lg leading-relaxed font-medium">
+              <h3 className="text-2xl md:text-3xl font-light text-white mb-4">Emergency Dental Care</h3>
+              <p className="text-blue-100 mb-8 text-lg leading-relaxed font-light">
                 Dental emergencies don't wait for business hours. We're here when you need us most.
               </p>
             </div>
             <a 
               href="tel:+9779846643260" 
-              className="inline-block bg-white text-blue-600 font-semibold py-4 px-8 rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform relative z-10"
+              className="inline-block bg-white text-blue-600 font-light py-4 px-8 rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform relative z-10"
             >
               Emergency: 9846643260
             </a>
@@ -163,4 +162,3 @@ export const ContactInfo = () => {
     </section>
   );
 };
-

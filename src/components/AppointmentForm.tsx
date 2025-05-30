@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -81,15 +82,15 @@ export const AppointmentForm = () => {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Heart className="w-6 h-6 text-red-500 animate-pulse" />
-            <span className="text-blue-600 font-semibold tracking-wide uppercase text-sm">Book With Confidence</span>
+            <span className="text-blue-600 font-light tracking-wide uppercase text-sm">Book With Confidence</span>
             <Heart className="w-6 h-6 text-red-500 animate-pulse" />
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-700 via-purple-600 to-blue-800 bg-clip-text text-transparent mb-6">
+          <h2 className="text-4xl md:text-5xl font-light bg-gradient-to-r from-blue-700 via-purple-600 to-blue-800 bg-clip-text text-transparent mb-6">
             Book Your Appointment
           </h2>
           
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed font-light">
             Take the first step towards your perfect smile. Our team is ready to provide you with exceptional care.
           </p>
           
@@ -97,7 +98,7 @@ export const AppointmentForm = () => {
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
             ))}
-            <span className="ml-2 text-gray-600 font-medium">Trusted by 1000+ patients</span>
+            <span className="ml-2 text-gray-600 font-light">Trusted by 1000+ patients</span>
           </div>
         </div>
 
@@ -106,8 +107,8 @@ export const AppointmentForm = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-white/80 to-blue-50/80 pointer-events-none"></div>
           
           <CardHeader className="text-center pb-8 relative z-10">
-            <CardTitle className="text-3xl text-gray-900 mb-2">Appointment Request Form</CardTitle>
-            <CardDescription className="text-gray-600 text-lg">
+            <CardTitle className="text-3xl text-gray-900 mb-2 font-light">Appointment Request Form</CardTitle>
+            <CardDescription className="text-gray-600 text-lg font-light">
               Please provide your information and we'll get back to you within 24 hours
             </CardDescription>
           </CardHeader>
@@ -116,14 +117,14 @@ export const AppointmentForm = () => {
             <form onSubmit={handleSubmit} className="space-y-8">
               {/* Personal Information Section */}
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <h3 className="text-xl font-light text-gray-800 mb-4 flex items-center gap-2">
                   <User className="w-5 h-5 text-blue-600" />
                   Personal Information
                 </h3>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-3">
-                    <Label htmlFor="firstName" className="text-gray-700 font-medium flex items-center gap-2">
+                    <Label htmlFor="firstName" className="text-gray-700 font-light flex items-center gap-2">
                       First Name *
                     </Label>
                     <Input
@@ -138,7 +139,7 @@ export const AppointmentForm = () => {
                   </div>
                   
                   <div className="space-y-3">
-                    <Label htmlFor="lastName" className="text-gray-700 font-medium">
+                    <Label htmlFor="lastName" className="text-gray-700 font-light">
                       Last Name *
                     </Label>
                     <Input
@@ -156,14 +157,14 @@ export const AppointmentForm = () => {
 
               {/* Contact Information Section */}
               <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-100">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <h3 className="text-xl font-light text-gray-800 mb-4 flex items-center gap-2">
                   <Mail className="w-5 h-5 text-purple-600" />
                   Contact Information
                 </h3>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-3">
-                    <Label htmlFor="email" className="text-gray-700 font-medium">
+                    <Label htmlFor="email" className="text-gray-700 font-light">
                       Email Address *
                     </Label>
                     <Input
@@ -179,7 +180,7 @@ export const AppointmentForm = () => {
                   </div>
                   
                   <div className="space-y-3">
-                    <Label htmlFor="phone" className="text-gray-700 font-medium">
+                    <Label htmlFor="phone" className="text-gray-700 font-light">
                       Phone Number *
                     </Label>
                     <Input
@@ -198,14 +199,14 @@ export const AppointmentForm = () => {
 
               {/* Appointment Preferences Section */}
               <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 border border-green-100">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <h3 className="text-xl font-light text-gray-800 mb-4 flex items-center gap-2">
                   <Calendar className="w-5 h-5 text-green-600" />
                   Appointment Preferences
                 </h3>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-3">
-                    <Label htmlFor="preferredDate" className="text-gray-700 font-medium">
+                    <Label htmlFor="preferredDate" className="text-gray-700 font-light">
                       Preferred Date *
                     </Label>
                     <Input
@@ -221,7 +222,7 @@ export const AppointmentForm = () => {
                   </div>
                   
                   <div className="space-y-3">
-                    <Label className="text-gray-700 font-medium flex items-center gap-2">
+                    <Label className="text-gray-700 font-light flex items-center gap-2">
                       <Clock className="w-4 h-4" />
                       Preferred Time
                     </Label>
@@ -241,7 +242,7 @@ export const AppointmentForm = () => {
 
               {/* Type of Concern */}
               <div className="space-y-3">
-                <Label className="text-gray-700 font-medium text-lg">Type of Dental Concern</Label>
+                <Label className="text-gray-700 font-light text-lg">Type of Dental Concern</Label>
                 <Select onValueChange={(value) => handleSelectChange(value, 'concernType')}>
                   <SelectTrigger className="border-gray-300 focus:border-blue-500 focus:ring-blue-500 bg-white/80 backdrop-blur-sm h-12">
                     <SelectValue placeholder="Select the type of appointment" />
@@ -252,6 +253,9 @@ export const AppointmentForm = () => {
                     <SelectItem value="filling">Cavity/Filling</SelectItem>
                     <SelectItem value="cosmetic">Cosmetic Dentistry</SelectItem>
                     <SelectItem value="orthodontics">Orthodontics/Braces</SelectItem>
+                    <SelectItem value="surgical-extractions">Surgical Extractions</SelectItem>
+                    <SelectItem value="minor-oral-surgery">Minor Oral Surgical Procedures</SelectItem>
+                    <SelectItem value="dental-implants">Dental Implants</SelectItem>
                     <SelectItem value="emergency">Emergency</SelectItem>
                     <SelectItem value="other">Other</SelectItem>
                   </SelectContent>
@@ -260,7 +264,7 @@ export const AppointmentForm = () => {
 
               {/* Additional Notes */}
               <div className="space-y-3">
-                <Label htmlFor="notes" className="text-gray-700 font-medium text-lg flex items-center gap-2">
+                <Label htmlFor="notes" className="text-gray-700 font-light text-lg flex items-center gap-2">
                   <MessageSquare className="w-5 h-5" />
                   Additional Notes
                 </Label>
@@ -280,7 +284,7 @@ export const AppointmentForm = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 disabled:opacity-50 transform hover:scale-105 shadow-lg h-14 text-lg"
+                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-light py-4 px-6 rounded-xl transition-all duration-300 disabled:opacity-50 transform hover:scale-105 shadow-lg h-14 text-lg"
                 >
                   {isSubmitting ? (
                     <div className="flex items-center gap-2">

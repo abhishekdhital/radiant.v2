@@ -20,33 +20,33 @@ export const DentalHero = () => {
       
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 drop-shadow-sm">
+          <h1 className="text-4xl md:text-6xl font-extralight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 drop-shadow-sm">
             Your Smile, Our Priority
           </h1>
           
-          <p className="text-lg md:text-xl mb-12 text-gray-600 max-w-3xl mx-auto leading-relaxed font-medium">
+          <p className="text-lg md:text-xl mb-12 text-gray-600 max-w-3xl mx-auto leading-relaxed font-light">
             Experience quality dental care with a team dedicated to your comfort and health.
           </p>
           
           <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base mb-12">
             <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-xl border border-white/30 hover:shadow-2xl transition-all duration-300 hover:scale-105 group">
               <Calendar className="w-5 h-5 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
-              <span className="font-semibold text-gray-700">Flexible Scheduling</span>
+              <span className="font-light text-gray-700">Flexible Scheduling</span>
             </div>
             <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-xl border border-white/30 hover:shadow-2xl transition-all duration-300 hover:scale-105 group">
               <Clock className="w-5 h-5 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
-              <span className="font-semibold text-gray-700">Quick Response</span>
+              <span className="font-light text-gray-700">Quick Response</span>
             </div>
             <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-xl border border-white/30 hover:shadow-2xl transition-all duration-300 hover:scale-105 group">
               <Phone className="w-5 h-5 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
-              <span className="font-semibold text-gray-700">Expert Care</span>
+              <span className="font-light text-gray-700">Expert Care</span>
             </div>
           </div>
           
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <a 
               href="#appointment" 
-              className="bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 text-white font-semibold py-4 px-8 rounded-full hover:from-blue-700 hover:via-blue-800 hover:to-indigo-800 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 transform relative overflow-hidden group"
+              className="bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 text-white font-light py-4 px-8 rounded-full hover:from-blue-700 hover:via-blue-800 hover:to-indigo-800 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 transform relative overflow-hidden group"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></span>
               <span className="relative z-10">Book Appointment</span>
@@ -54,7 +54,7 @@ export const DentalHero = () => {
             
             <button 
               onClick={() => scrollToSection('contact')}
-              className="flex items-center gap-2 bg-gradient-to-r from-green-600 via-green-700 to-emerald-700 text-white font-semibold py-4 px-8 rounded-full hover:from-green-700 hover:via-green-800 hover:to-emerald-800 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 transform relative overflow-hidden group"
+              className="flex items-center gap-2 bg-gradient-to-r from-green-600 via-green-700 to-emerald-700 text-white font-light py-4 px-8 rounded-full hover:from-green-700 hover:via-green-800 hover:to-emerald-800 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 transform relative overflow-hidden group"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></span>
               <MapPin className="w-5 h-5 group-hover:scale-110 transition-transform duration-300 relative z-10" />
@@ -63,7 +63,7 @@ export const DentalHero = () => {
             
             <a 
               href="tel:+9779846643260" 
-              className="flex items-center gap-2 bg-white/95 backdrop-blur-sm text-blue-600 font-semibold py-4 px-8 rounded-full border-2 border-blue-200 hover:bg-blue-50 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 transform group"
+              className="flex items-center gap-2 bg-white/95 backdrop-blur-sm text-blue-600 font-light py-4 px-8 rounded-full border-2 border-blue-200 hover:bg-blue-50 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 transform group"
             >
               <Phone className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
               Call: 9846643260

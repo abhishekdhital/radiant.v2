@@ -29,11 +29,11 @@ const Index = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Radiant Buddha Dental Clinic</h3>
-            <p className="text-gray-300 text-sm">Your Smile, Our Priority</p>
+            <h3 className="text-xl font-light mb-2">Radiant Buddha Dental Clinic</h3>
+            <p className="text-gray-300 text-sm font-light">Your Smile, Our Priority</p>
           </div>
           <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto mb-6"></div>
-          <p className="text-gray-400">
+          <p className="text-gray-400 font-light">
             © 2024 Radiant Buddha Dental Clinic. All rights reserved.
           </p>
         </div>
