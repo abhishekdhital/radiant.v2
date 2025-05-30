@@ -8,6 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, Clock, User, Phone, Mail, MessageSquare, Heart, Star } from "lucide-react";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 export const AppointmentForm = () => {
   const [formData, setFormData] = useState({
@@ -44,11 +45,19 @@ export const AppointmentForm = () => {
     }
 
     try {
-      // This is where you'll integrate with your backend/email service
-      console.log("Appointment request:", formData);
+      console.log("Submitting appointment request:", formData);
       
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Call the Supabase Edge Function
+      const { data, error } = await supabase.functions.invoke('send-appointment-email', {
+        body: formData
+      });
+
+      if (error) {
+        console.error("Supabase function error:", error);
+        throw error;
+      }
+
+      console.log("Function response:", data);
       
       toast.success("Appointment request submitted! We'll contact you within 24 hours to confirm your appointment.");
       
@@ -64,7 +73,8 @@ export const AppointmentForm = () => {
         notes: "",
       });
     } catch (error) {
-      toast.error("Something went wrong. Please try again or call us directly.");
+      console.error("Error submitting appointment:", error);
+      toast.error("Something went wrong. Please try again or call us directly at 9846643260.");
     } finally {
       setIsSubmitting(false);
     }
