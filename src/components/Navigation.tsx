@@ -8,7 +8,11 @@ export const Navigation = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const offsetTop = element.offsetTop - 100; // Account for fixed header
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
     }
     setIsMenuOpen(false);
   };
