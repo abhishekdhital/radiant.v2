@@ -51,7 +51,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send email to clinic
     const clinicEmailResponse = await resend.emails.send({
       from: "Radiant Buddha Dental <onboarding@resend.dev>",
-      to: ["dhitalabhi17@gmail.com"],
+      to: ["prabeshranabhat46@gmail.com"],
       subject: `New Appointment Request - ${appointmentData.firstName} ${appointmentData.lastName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
