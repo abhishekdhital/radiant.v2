@@ -93,4 +93,60 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Ensure all headings are visible in dark mode */
+  .dark h1,
+  .dark h2,
+  .dark h3,
+  .dark h4,
+  .dark h5,
+  .dark h6 {
+    @apply text-foreground;
+  }
+
+  /* Ensure gradient text remains visible in dark mode */
+  .dark .bg-clip-text {
+    @apply text-foreground;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+  }
+
+  /* Fix transparent text in dark mode */
+  .dark .text-transparent {
+    @apply text-foreground;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+  }
+
+  /* Ensure buttons remain visible */
+  .dark button {
+    @apply text-current;
+  }
+
+  /* Ensure navigation links are visible */
+  .dark nav a,
+  .dark nav button {
+    @apply text-foreground;
+  }
+
+  /* Ensure card content is visible */
+  .dark .bg-white {
+    @apply bg-card text-card-foreground;
+  }
+
+  /* Ensure form elements are visible */
+  .dark input,
+  .dark textarea,
+  .dark select {
+    @apply bg-input text-foreground border-border;
+  }
+
+  /* Ensure all text elements are visible */
+  .dark p,
+  .dark span,
+  .dark div {
+    color: inherit;
+  }
 }
