@@ -1,4 +1,5 @@
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -94,55 +95,38 @@
     @apply bg-background text-foreground;
   }
 
-  /* Ensure all headings are visible in dark mode */
+  /* DARK MODE FIXES - Comprehensive text visibility solution */
   .dark h1,
   .dark h2,
   .dark h3,
   .dark h4,
   .dark h5,
   .dark h6 {
-    @apply text-foreground;
+    color: #ffffff !important;
   }
 
-  /* --- HEADINGS GRADIENT/TEXT-TRANSPARENT FIX FOR DARK MODE --- */
-  /* Fix for headings using gradient+clip in dark mode */
-  .dark .bg-clip-text.text-transparent, 
-  .dark .text-transparent.bg-clip-text {
-    color: #fff !important;
-    background: none !important;
-    background-clip: unset !important;
-    -webkit-background-clip: unset !important;
-    -webkit-text-fill-color: #fff !important;
-  }
-
-  /* Ensure navigation bar clinic name remains visible in dark */
-  .dark .bg-clip-text {
-    color: #fff !important;
-    background: none !important;
-    background-clip: unset !important;
-    -webkit-background-clip: unset !important;
-    -webkit-text-fill-color: #fff !important;
-  }
-
-  /* Ensure all headings in navigation branding are visible */
+  /* Fix gradient text and transparent text in dark mode */
+  .dark .bg-clip-text,
   .dark .text-transparent {
-    color: #fff !important;
+    color: #ffffff !important;
     background: none !important;
     background-clip: unset !important;
     -webkit-background-clip: unset !important;
-    -webkit-text-fill-color: #fff !important;
+    -webkit-text-fill-color: #ffffff !important;
   }
-  
-  /* Fix blue text visibility in dark mode */
+
+  /* Fix all blue text colors in dark mode */
   .dark .text-blue-600,
   .dark .text-blue-500,
   .dark .text-blue-700,
   .dark .text-blue-800,
-  .dark .text-blue-900 {
+  .dark .text-blue-900,
+  .dark .text-blue-400,
+  .dark .text-blue-300 {
     color: #ffffff !important;
   }
 
-  /* Fix blue links and interactive elements in dark mode */
+  /* Fix blue links and buttons in dark mode */
   .dark a.text-blue-600,
   .dark a.text-blue-500,
   .dark a.text-blue-700,
@@ -152,33 +136,55 @@
     color: #ffffff !important;
   }
 
-  /* Ensure buttons remain visible */
-  .dark button {
-    @apply text-current;
+  /* Fix any text with gradient backgrounds */
+  .dark .bg-gradient-to-r,
+  .dark .bg-gradient-to-l,
+  .dark .bg-gradient-to-t,
+  .dark .bg-gradient-to-b,
+  .dark .bg-gradient-to-br,
+  .dark .bg-gradient-to-bl {
+    color: #ffffff !important;
   }
 
-  /* Ensure navigation links are visible */
-  .dark nav a,
-  .dark nav button {
-    @apply text-foreground;
+  /* Ensure all text elements are visible */
+  .dark p,
+  .dark span,
+  .dark div,
+  .dark button,
+  .dark a {
+    color: inherit !important;
   }
 
-  /* Ensure card content is visible */
-  .dark .bg-white {
-    @apply bg-card text-card-foreground;
+  /* Navigation specific fixes */
+  .dark nav,
+  .dark nav *,
+  .dark header,
+  .dark header * {
+    color: #ffffff !important;
   }
 
-  /* Ensure form elements are visible */
+  /* Hero section specific fixes */
+  .dark section h1,
+  .dark section h2,
+  .dark .hero-title,
+  .dark .hero-text {
+    color: #ffffff !important;
+    background: none !important;
+    background-clip: unset !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
+
+  /* Form elements visibility */
   .dark input,
   .dark textarea,
   .dark select {
     @apply bg-input text-foreground border-border;
   }
 
-  /* Ensure all text elements are visible */
-  .dark p,
-  .dark span,
-  .dark div {
-    color: inherit;
+  /* Card content visibility */
+  .dark .bg-white {
+    @apply bg-card text-card-foreground;
   }
 }
+
