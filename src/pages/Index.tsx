@@ -33,8 +33,19 @@ const Index = () => {
             <p className="text-gray-300 text-sm font-light">Your Smile, Our Priority</p>
           </div>
           <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto mb-6"></div>
-          <p className="text-gray-400 font-light">
+          <p className="text-gray-400 font-light mb-2">
             © 2024 Radiant Buddha Dental Clinic. All rights reserved.
+          </p>
+          <p className="text-gray-500 text-sm">
+            made by{' '}
+            <a 
+              href="https://www.linkedin.com/company/cricket-nepal" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 transition-colors duration-300 underline"
+            >
+              wharraBots
+            </a>
           </p>
         </div>
       </footer>
