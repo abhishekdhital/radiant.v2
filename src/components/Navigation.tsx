@@ -24,7 +24,6 @@ export const Navigation = () => {
                   import.meta.env.BASE_URL
                 }lovable-uploads/1139b64d-1945-4afe-aa77-a8b7de0d333c.png`}
                 alt="Radiant Buddha Dental Clinic Logo"
-                className="w-full h-full object-cover"
               />
             </div>
             <div className="flex flex-col">

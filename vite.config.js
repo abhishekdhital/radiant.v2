@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react-swc';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
-  base: '/radiant-buddha-/',  // <-- VERY IMPORTANT for GitHub Pages
+  // base: '/radiant-buddha-/',  // <-- VERY IMPORTANT for GitHub Pages
   server: {
     host: 'localhost',
     port: 5173,
