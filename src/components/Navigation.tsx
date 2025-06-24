@@ -1,4 +1,3 @@
-
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -8,7 +7,7 @@ export const Navigation = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
     setIsMenuOpen(false);
   };
@@ -20,8 +19,10 @@ export const Navigation = () => {
           {/* Logo and Clinic Name */}
           <div className="flex items-center space-x-4">
             <div className="w-14 h-14 rounded-full overflow-hidden bg-white border-2 border-gray-200 shadow-md hover:shadow-lg transition-shadow duration-300">
-              <img 
-                src="/lovable-uploads/1139b64d-1945-4afe-aa77-a8b7de0d333c.png" 
+              <img
+                src={`${
+                  import.meta.env.BASE_URL
+                }lovable-uploads/1139b64d-1945-4afe-aa77-a8b7de0d333c.png`}
                 alt="Radiant Buddha Dental Clinic Logo"
                 className="w-full h-full object-cover"
               />
@@ -30,35 +31,37 @@ export const Navigation = () => {
               <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600">
                 Radiant Buddha Dental Clinic
               </span>
-              <span className="text-sm text-gray-500 -mt-1">Your Smile, Our Priority</span>
+              <span className="text-sm text-gray-500 -mt-1">
+                Your Smile, Our Priority
+              </span>
             </div>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <button
-              onClick={() => scrollToSection('home')}
+              onClick={() => scrollToSection("home")}
               className="text-gray-700 hover:text-blue-600 transition-all duration-300 font-semibold relative group"
             >
               Home
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
-              onClick={() => scrollToSection('about')}
+              onClick={() => scrollToSection("about")}
               className="text-gray-700 hover:text-blue-600 transition-all duration-300 font-semibold relative group"
             >
               About Us
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
-              onClick={() => scrollToSection('find-us')}
+              onClick={() => scrollToSection("find-us")}
               className="text-gray-700 hover:text-blue-600 transition-all duration-300 font-semibold relative group"
             >
               Find Us
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection("contact")}
               className="text-gray-700 hover:text-blue-600 transition-all duration-300 font-semibold relative group"
             >
               Contact
@@ -78,7 +81,11 @@ export const Navigation = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-700 hover:text-blue-600 transition-colors duration-300 p-2"
             >
-              {isMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+              {isMenuOpen ? (
+                <X className="w-7 h-7" />
+              ) : (
+                <Menu className="w-7 h-7" />
+              )}
             </button>
           </div>
         </div>
@@ -88,25 +95,25 @@ export const Navigation = () => {
           <div className="md:hidden absolute top-20 left-0 right-0 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-xl">
             <div className="px-4 py-6 space-y-4">
               <button
-                onClick={() => scrollToSection('home')}
+                onClick={() => scrollToSection("home")}
                 className="block w-full text-left text-gray-700 hover:text-blue-600 transition-colors duration-300 font-semibold py-3 px-2 rounded-lg hover:bg-blue-50"
               >
                 Home
               </button>
               <button
-                onClick={() => scrollToSection('about')}
+                onClick={() => scrollToSection("about")}
                 className="block w-full text-left text-gray-700 hover:text-blue-600 transition-colors duration-300 font-semibold py-3 px-2 rounded-lg hover:bg-blue-50"
               >
                 About Us
               </button>
               <button
-                onClick={() => scrollToSection('find-us')}
+                onClick={() => scrollToSection("find-us")}
                 className="block w-full text-left text-gray-700 hover:text-blue-600 transition-colors duration-300 font-semibold py-3 px-2 rounded-lg hover:bg-blue-50"
               >
                 Find Us
               </button>
               <button
-                onClick={() => scrollToSection('contact')}
+                onClick={() => scrollToSection("contact")}
                 className="block w-full text-left text-gray-700 hover:text-blue-600 transition-colors duration-300 font-semibold py-3 px-2 rounded-lg hover:bg-blue-50"
               >
                 Contact
