@@ -1,9 +1,9 @@
-
 import { Navigation } from "@/components/Navigation";
 import { DentalHero } from "@/components/DentalHero";
 import { AboutUs } from "@/components/AboutUs";
 import { AppointmentForm } from "@/components/AppointmentForm";
 import { ContactInfo } from "@/components/ContactInfo";
+
 
 const Index = () => {
   return (
@@ -16,6 +16,7 @@ const Index = () => {
       <AppointmentForm />
       <div id="contact">
         <ContactInfo />
+     
       </div>
       
       {/* Footer */}
@@ -29,7 +30,7 @@ const Index = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-light mb-2">Radiant Buddha Dental Clinic</h3>
+            <h3 className="text-xl font-light mb-2 heading-font">Radiant Buddha Dental Clinic</h3>
             <p className="text-gray-300 text-sm font-light">Your Smile, Our Priority</p>
           </div>
           <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto mb-6"></div>
@@ -39,12 +40,12 @@ const Index = () => {
           <p className="text-gray-500 text-sm">
             made by{' '}
             <a 
-              href="https://www.linkedin.com/company/cricket-nepal" 
+              href="https://www.linkedin.com/company/wharrabots" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-blue-400 hover:text-blue-300 transition-colors duration-300 underline"
             >
-              wharraBots
+              cutlery pvt ltd
             </a>
           </p>
         </div>

@@ -1,5 +1,3 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -186,5 +184,19 @@
   .dark .bg-white {
     @apply bg-card text-card-foreground;
   }
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('/fonts/AvenirNext-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Apply to all headings */
+.heading-font, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Avenir Next', 'Montserrat', 'Nunito', Arial, sans-serif;
+  font-weight: 500;
 }
 

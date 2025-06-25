@@ -44,13 +44,13 @@ export const DentalHero = () => {
           </div>
           
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a 
-              href="#appointment" 
+            <button 
+              onClick={() => scrollToSection('appointment')}
               className="bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 text-white font-light py-4 px-8 rounded-full hover:from-blue-700 hover:via-blue-800 hover:to-indigo-800 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 transform relative overflow-hidden group"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></span>
               <span className="relative z-10">Book Appointment</span>
-            </a>
+            </button>
             
             <button 
               onClick={() => scrollToSection('contact')}
